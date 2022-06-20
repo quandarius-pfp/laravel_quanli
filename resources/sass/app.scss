@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+.menu_admin{
+    a{
+        color:#fff ;
+    }
+    
+}
+.dropdown-menu{
+    background-color:  #000 !important;
+    
+}
+.dropdown-item:hover{
+    background-color: #fff;
+    a{
+        color:#000 !important;
+    }
+}
+
+
+@mixin color_templete($color) { 
+    background-color: $color;
+}
+
+.card{
+    @include color_templete(red);
+    position: fixed;
+    width: 100%;
+}
+
+
